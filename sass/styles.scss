@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500&family=Fira+Sans:wght@100;400&family=Inter:wght@200&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,300;1,400&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&family=Roboto:wght@400;500&family=Rowdies:wght@300&display=swap');
+
+// -- NORMALIZE -- // 
+*  {
+    font-family: "Poppins" sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+// -- HEADER SECTION-- // 
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+ .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #148f87;
+    cursor: pointer;
+    }
+    .logo a {
+        font-family: "Anton", sans-serif;
+    } 
+    .logo:hover{
+        color: #E1E425;
+    }
+    .logo i {
+        color: #148f87;
+    }
+
+} 
+
+// --- NAVBAR -- // 
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+
+    .mainMenu {
+    display: flex;
+    list-style: none;
+    }
+
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color: #148f87;
+        font-size: 1.5rem;
+        transition: 0.2s ease;
+    }
+    .mainMenu li a:hover {
+        color: #E1E425;
+    }
+    .openMenu {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+    }
+    .mainMenu .closeMenu, .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+    }
+
+// Social media icons
+.fa-facebook:hover {color: #E1E425;}
+.fa-instagram:hover {color: #E1E425;}
+.fa-x-twitter:hover {color: #E1E425;}
+.fa-github:hover {color: #E1E425;}
+
+@media screen and (max-width:767px) {
+    .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        transition: top 1s ease 0s;
+        display: none;
+
+    }
+.mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 3.5rem;
+}
+.openMenu {
+    display: block;
+    color: #148f87;
+    font-size: 2.5rem;
+}
+.mainMenu li a:hover {
+    background: none;
+
+}
+.icons i  {
+    display: inline-block;
+    padding: 15px;
+    color: #148f87;
+    top: 2rem;
+}
+
+
+    } // Media Queries Section End
+
+} // Navbar Section End
+
+
+
+
